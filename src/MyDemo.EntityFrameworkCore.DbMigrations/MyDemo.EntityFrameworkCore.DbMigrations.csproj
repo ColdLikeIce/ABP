@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>MyDemo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201015065107_Init.cs" />
+    <Compile Remove="Migrations\20201015065107_Init.Designer.cs" />
+    <Compile Remove="Migrations\20201015082637_Created_GameUser_Entity.cs" />
+    <Compile Remove="Migrations\20201015082637_Created_GameUser_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20201016044609_GameUser_Entity.cs" />
+    <Compile Remove="Migrations\20201016044609_GameUser_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20201016062818_GameUser_entity.cs" />
+    <Compile Remove="Migrations\20201016062818_GameUser_entity.Designer.cs" />
+    <Compile Remove="Migrations\20201016093018_t.cs" />
+    <Compile Remove="Migrations\20201016093018_t.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyDemo.EntityFrameworkCore\MyDemo.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6" />
+  </ItemGroup>
+
+</Project>
