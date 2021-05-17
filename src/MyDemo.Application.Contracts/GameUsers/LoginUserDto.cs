@@ -13,5 +13,6 @@ namespace MyDemo.GameUsers
         public string ThirdToken { get; set; }
         public bool IsThirdConfirmed { get; set; }
         public string Lang { get; set; }
+        public int loginType { get; set; }
     }
 }
