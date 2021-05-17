@@ -1,11 +1,11 @@
 ﻿
-using Mapster;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Mapster;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 using Volo.Abp.Domain.Entities;
@@ -34,19 +34,19 @@ namespace MyDemo.GameUsers
 
 
             var remark = "";
-            
-            
-                      switch (loginInput.loginType)
+
+
+            switch (loginInput.loginType)
             {
                 case 1:
-                                remark = "1";
-                     break;
+                    remark = "1";
+                    break;
                 case 2:
-                                      remark = "2";
-                                break;
-                                       default:
-                remark = "3";
-                       break;
+                    remark = "2";
+                    break;
+                default:
+                    remark = "3";
+                    break;
             }
             OperateResult result = new OperateResult();
             var gameuser = loginInput.Adapt<GameUser>();
