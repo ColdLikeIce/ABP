@@ -29,17 +29,7 @@ namespace MyDemo.GameUsers
         /// <returns></returns>
         public async Task<OperateResult> UserLogin(LoginUserDto loginInput)
         {
-
-
-
-
             var remark = "";
-
-
-
-
-
-
             switch (loginInput.loginType)
             {
                 case 1:
