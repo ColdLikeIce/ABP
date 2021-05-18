@@ -59,7 +59,7 @@ namespace MyDemo.GameUsers
             {
                 //第三方登录直接校验第三方令牌
                 var existUser = _gameUserRepository.FirstOrDefault(n =>
-                                n.ThirdOpenId.Equals(loginInput.ThirdOpenId) && n.ThirdToken.Equals(loginInput.ThirdToken));
+                                 n.ThirdOpenId.Equals(loginInput.ThirdOpenId) && n.ThirdToken.Equals(loginInput.ThirdToken));
                 if (existUser == null)
                 {
                     //注册
