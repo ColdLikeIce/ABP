@@ -30,27 +30,20 @@ namespace MyDemo.GameUsers
         public async Task<OperateResult> UserLogin(LoginUserDto loginInput)
         {
 
-
-
-
             var remark = "";
-
-
-
-
 
 
             switch (loginInput.loginType)
             {
-                case 1:
-                    remark = "1";
-                    break;
-                case 2:
-                    remark = "2";
-                    break;
+                            case 1:
+                                    remark = "1";
+                         break;
+                         case 2:
+                             remark = "2";
+                            break;
                 default:
-                    remark = "3";
-                    break;
+                               remark = "3";
+                                 break;
             }
             OperateResult result = new OperateResult();
             var gameuser = loginInput.Adapt<GameUser>();
