@@ -1,6 +1,6 @@
 ﻿namespace MyDemo
 {
-    public abstract class MyDemoDomainTestBase : MyDemoTestBase<MyDemoDomainTestModule> 
+    public abstract class MyDemoDomainTestBase : MyDemoTestBase<MyDemoDomainTestModule>
     {
 
     }

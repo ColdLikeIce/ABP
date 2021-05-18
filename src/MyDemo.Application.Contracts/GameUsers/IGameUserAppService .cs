@@ -7,7 +7,7 @@ using Volo.Abp.Application.Services;
 
 namespace MyDemo.GameUsers
 {
-    public interface IGameUserAppService: IApplicationService
+    public interface IGameUserAppService : IApplicationService
     {
         /// <summary>
         /// 登录

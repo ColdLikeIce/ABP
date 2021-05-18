@@ -2,7 +2,7 @@
 
 namespace MyDemo.EntityFrameworkCore
 {
-    public abstract class MyDemoEntityFrameworkCoreTestBase : MyDemoTestBase<MyDemoEntityFrameworkCoreTestModule> 
+    public abstract class MyDemoEntityFrameworkCoreTestBase : MyDemoTestBase<MyDemoEntityFrameworkCoreTestModule>
     {
 
     }

@@ -36,6 +36,10 @@ namespace MyDemo.GameUsers
             var remark = "";
 
 
+
+
+
+
             switch (loginInput.loginType)
             {
                 case 1:

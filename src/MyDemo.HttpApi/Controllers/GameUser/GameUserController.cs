@@ -1,14 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MyDemo.GameUsers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using MyDemo.GameUsers;
 using Volo.Abp.AspNetCore.Mvc;
 
 namespace MyDemo.Controllers.GameUser
 {
-    public class GameUserController:AbpController,IGameUserAppService
+    public class GameUserController : AbpController, IGameUserAppService
     {
         private readonly IGameUserAppService _service;
         public GameUserController(IGameUserAppService service)

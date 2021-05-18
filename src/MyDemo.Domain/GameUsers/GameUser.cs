@@ -7,7 +7,7 @@ using Volo.Abp.Domain.Entities.Auditing;
 
 namespace MyDemo.GameUsers
 {
-    public class GameUser: Entity<int>
+    public class GameUser : Entity<int>
     {
         [StringLength(18)]
         public string UserName { get; set; }

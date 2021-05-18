@@ -19,11 +19,11 @@ namespace MyDemo.EntityFrameworkCore
             //    b.ConfigureByConvention(); //auto configure for the base class props
             //    //...
             //});
-             builder.Entity<GameUser>(b =>
-              {
-                  b.ToTable(MyDemoConsts.DbTablePrefix + "GameUsers", MyDemoConsts.DbSchema);
-                  b.ConfigureByConvention();
-              });
+            builder.Entity<GameUser>(b =>
+             {
+                 b.ToTable(MyDemoConsts.DbTablePrefix + "GameUsers", MyDemoConsts.DbSchema);
+                 b.ConfigureByConvention();
+             });
         }
     }
 }

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using Localization.Resources.AbpUi;
 using Microsoft.AspNetCore;
@@ -7,11 +7,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using MyDemo.EntityFrameworkCore;
 using MyDemo.Localization;
 using MyDemo.MultiTenancy;
 using MyDemo.Web.Menus;
-using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
 using Volo.Abp;
 using Volo.Abp.Account.Web;
@@ -32,9 +32,9 @@ using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement.Web;
 using Volo.Abp.TenantManagement.Web;
-using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.UI;
 using Volo.Abp.UI.Navigation;
+using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.VirtualFileSystem;
 
 namespace MyDemo.Web

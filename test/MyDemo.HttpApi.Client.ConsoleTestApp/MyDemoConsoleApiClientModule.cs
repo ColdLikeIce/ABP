@@ -9,6 +9,6 @@ namespace MyDemo.HttpApi.Client.ConsoleTestApp
         )]
     public class MyDemoConsoleApiClientModule : AbpModule
     {
-        
+
     }
 }

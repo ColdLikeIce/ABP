@@ -19,7 +19,7 @@ namespace MyDemo.EntityFrameworkCore
      */
     public class MyDemoMigrationsDbContext : AbpDbContext<MyDemoMigrationsDbContext>
     {
-        public MyDemoMigrationsDbContext(DbContextOptions<MyDemoMigrationsDbContext> options) 
+        public MyDemoMigrationsDbContext(DbContextOptions<MyDemoMigrationsDbContext> options)
             : base(options)
         {
 

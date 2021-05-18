@@ -57,7 +57,7 @@ namespace MyDemo.Users
 
         private AppUser()
         {
-            
+
         }
     }
 }
