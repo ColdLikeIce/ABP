@@ -2,6 +2,8 @@
 # (请勿使用制表符进行缩进)
 [*]
 indent_style = space
+#  是否删除行尾空格
+trim_trailing_whitespace=true
 # (Please don't specify an indent_size here; that has too many unintended consequences.)
 
 # 代码文件 indent_size 缩进符
@@ -21,7 +23,7 @@ indent_size = 2
 # JSON 文件
 [*.json]
 indent_size = 2
-
+# 换行符格式 
 [*.{sh}]
 end_of_line = lf
 indent_size = 2
