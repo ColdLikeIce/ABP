@@ -17,7 +17,7 @@ namespace MyDemo
             switch (1)
             {
                 case 1:
-                             remark = "1";
+                              remark = "1";
                           break;
                       case 2:
                               remark = "2";
