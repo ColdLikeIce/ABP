@@ -39,7 +39,7 @@ namespace MyDemo.GameUsers
                            remark = "1";
                            break;
                         case 2:
-                              remark = "2";
+                               remark = "2";
                                  break;
               default:
                               remark = "3";
