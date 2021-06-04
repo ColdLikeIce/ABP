@@ -1,11 +1,15 @@
 #!/bin/sh
-echo "running precommit hook" 
 LC_ALL=C
+echo "running precommit hook" 
 # Select files to format
-FILES=$(git diff --cached --name-only --diff-filter=ACM "*.cs" | sed 's| |\\ |g')
-[ -z "$FILES" ] && exit 0
+GITFILES=$(git diff --cached --name-only --diff-filter=ACM "*.cs" | sed 's| |\\ |g')
+GITFILESq=$(git diff --cached --name-only --diff-filter=ACM "*.cs" | sed 's| |\\ |g')
+[ -z "$GITFILES" ] && exit 0
 # Format all selected files
-echo "$FILES" | cat | xargs | sed -e 's/ /,/g' | xargs dotnet-format --files
+echo "$GITFILES" 
+echo "$GITFILESq" 
+xargs dotnet-format --include  $GITFILES
 # Add back the modified files to staging
-echo "$FILES" | xargs git add
+echo "$GITFILES" | xargs git add
 exit 0
+
